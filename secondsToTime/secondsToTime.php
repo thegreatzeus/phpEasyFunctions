@@ -2,6 +2,8 @@
 
 function secondsToTime($inputSeconds, $dropSecondsPart=false, $dropMinutesPart=false, $dropHoursPart=false)
 {
+    if ($inputSeconds == 0) return "a moment";
+
     $secondsInAMinute = 60;
     $secondsInAnHour = 60 * $secondsInAMinute;
     $secondsInADay = 24 * $secondsInAnHour;
